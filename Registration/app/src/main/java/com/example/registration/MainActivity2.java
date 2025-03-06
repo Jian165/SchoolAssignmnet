@@ -2,6 +2,7 @@ package com.example.registration;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,8 +24,7 @@ public class MainActivity2 extends AppCompatActivity {
         });
         Intent intent = getIntent();
         String fname = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        TextView textView = findViewById(R.id.textView);
+        textView.setText("Welcome to Google "+fname+"!");
     }
-
-
-
 }
