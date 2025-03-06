@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imgGoogle"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_alignLeft="@id/lblRegister"
+        android:src="@drawable/google_logo_vector_01"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="12dp"
+        />
+    <TextView
+        android:id="@+id/lblRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create your google Account"
+        android:textSize="24dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/imgGoogle"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/lblRegister"
+        android:layout_alignRight="@id/lblRegister"
+        android:hint="FirstName"
+        android:textSize="24dp"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:background="@drawable/bg_editext"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/lblRegister"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/first_name"
+        android:layout_alignRight="@id/first_name"
+        android:hint="LastName"
+        android:textSize="24dp"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:background="@drawable/bg_editext"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/first_name"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/last_name"
+        android:layout_alignRight="@id/last_name"
+        android:hint="Username"
+        android:textSize="24dp"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:background="@drawable/bg_editext"
+        android:layout_marginTop="12dp"
+        android:layout_below="@id/last_name"
+        />
+
+    <CheckBox
+        android:id="@+id/password_visibility"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:button="@drawable/sl_password_visibility"
+        android:elevation="11dp"
+        android:layout_alignTop="@id/password"
+        android:layout_alignRight="@+id/password"
+        android:layout_alignBottom="@id/password"
+        />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/username"
+        android:layout_alignRight="@+id/username"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="40dp"
+        android:elevation="10dp"
+        android:background="@drawable/bg_editext"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textSize="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/username"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/password"
+        android:layout_alignRight="@id/password"
+        android:layout_below="@id/password"
+        android:hint="ConfirmPassword"
+        android:textSize="24dp"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:background="@drawable/bg_editext"
+        android:layout_marginTop="12dp"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="125dp"
+        android:elevation="20dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/username"
+        android:background="@drawable/bg_blue_suqare"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="Next"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>
