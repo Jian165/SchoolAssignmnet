@@ -1,5 +1,4 @@
 package com.example.registration;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -9,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
 public class MainActivity2 extends AppCompatActivity {
 
     @Override
@@ -25,6 +23,6 @@ public class MainActivity2 extends AppCompatActivity {
         Intent intent = getIntent();
         String fname = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
         TextView textView = findViewById(R.id.textView);
-        textView.setText("Welcome to Google "+fname+"!");
+        textView.setText("Welcome to Google "+fname+" !");
     }
 }

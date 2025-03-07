@@ -113,6 +113,7 @@
         android:layout_alignLeft="@id/password"
         android:layout_alignRight="@id/password"
         android:layout_below="@id/password"
+        android:inputType="textPassword"
         android:hint="ConfirmPassword"
         android:textSize="24dp"
         android:singleLine="true"

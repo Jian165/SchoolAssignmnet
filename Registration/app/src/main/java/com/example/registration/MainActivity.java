@@ -1,5 +1,4 @@
 package com.example.registration;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
-
 public class MainActivity extends AppCompatActivity {
     EditText firstName;
     public static final String EXTRA_MESSAGE="com.example.registration.MESSAGE";
@@ -25,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
         firstName =  findViewById(R.id.first_name);
         Button btnNext = findViewById(R.id.btn_next);
         btnNext.setOnClickListener(new View.OnClickListener() {

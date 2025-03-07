@@ -6,14 +6,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
-    <TextView
-        android:id="@+id/textView"
+
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:textSize="32dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="200dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        />
+        android:layout_marginTop="32dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_welcome_card"
+            >
+            <TextView
+                android:id="@+id/textView" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textColor="@color/white"
+                android:fontFamily=""
+                android:textStyle="bold"
+                android:textSize="24dp"
+                android:layout_margin="12dp"
+                />
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
 </RelativeLayout>
